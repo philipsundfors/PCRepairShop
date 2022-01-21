@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Boka datorreparation - PCRepairShop</title>
+        <meta charset="utf-8">
+        <link href="../css/style.css" type="text/css" rel="stylesheet">
+        <script src="../js/script.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <h1><a href="index.html"><img src="../bilder/PCRS logga.png" alt="logo" width="200"></a></h1> 
+            
+              <div class="searchbar" title="Sök på sidan"><input type="text" id="search" name="search" size="10" class="searchbar"><input type="submit" value="sök" class="searchbar"></div>
+        </header>
+        <section><h2>Boka datorreparation - Steg 1</h2></section>
+        <section class="section5">
+            <h1>OBS! Detta formulär är för att skicka in datorn till oss.</h1> <a href="boka-datorreparation.html">Tillbaka till första sidan</a><br>
+            <img src="../bilder/postnord_logo.png">
+            <h3>Fyll i formuläret nedan för at boka din datorreparation.</h3>
+            <p>* = Obligatorisk</p>
+            <form method="post" action="../action_page.php">
+                <label for="pcormac">Är datorn en PC eller en Mac?*</label>
+                <select id="pcormac" required>
+                    <option value="n" selected>Välj</option>
+                    <option value="pc">PC</option>
+                    <option value="mac">MAC</option>
+                </select><br>
+                <label for="manufacter">Datortillverkare (ex. HP):*</label>
+                <input type="text" id="manufacter" name="manufacter" required><br><br>
+                <label for="model">Datormodell (ex. ProBook A330e):</label>
+                <input type="text" id="model" name="model"><br><br>
+                Kort beskrivning av problemet (tex. startar ej, har fått virus, etc. ):*<br>
+                <textarea required id="problem" name="problem" cols="40" rows="10" minlength="10" maxlength="200" placeholder="Beskriv datorns problem kortfattat"></textarea><br><br>
+                <label for="image">Bild på problmet med datorn (valfritt):</label>
+                <input type="file" accept="image/*,"><br><br>
+                <label for="fname">Förnamn*:</label>
+                <input type="text" id="fname" name="fname" required><br><br>
+                <label for="lname">Efternamn*:</label>
+                <input type="text" id="lname" name="lname" required><br><br>
+                <label for="address">Adress (hit kommer datorn skickas tillbaka, se upp för stavfel!):*</label>
+                <input type="text" id="address" name="address" required><br><br>
+                <label for="zip">Postnr*:</label>
+                <input type="tel" id="zip" name="zip" required>
+                <label for="city">Ort*:</label>
+                <input type="text" id="city" name="city" required><br><br>
+                <label for="email">E-postadress (hit kommer en orderbekräftelse skickas)*:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="tel">Telefonnummer*:</label>
+                <input type="tel" id="tel" name="tel" required><br><br>
+                Övrigt:
+                <textarea id="extras" name="problem" cols="35" rows="7"></textarea><br>
+                <input type="checkbox" id="news" name="news"> Jag önskar att få nyhetsbrev för erbjudanden samt annan information.<br>
+                <input type="submit" value="Gå vidare">
+              </form>
+        </section>
+        <section class="section6">
+            <h3>Tänk på att:</h3>
+            <ul>
+                <li><b>Skicka enheten väl paketerad</b> med tex. bubbelplast, tidningar, etc. så den inte blir mer skadad under transporten till oss.</li>
+                <li><b>Kunden står för fraktkostnaderna båda riktningarna!</b></li>
+                <li>Enheten ska helst skickas med <b>Postnord</b> till oss</li>
+                <li><b>Enheterna ska skickas spårbara</b> till oss och glöm inte att bifoga <b>spårnings nr</b> efter ni lämnat in paketet till posten</li>
+                <li><b>Enheten ska skickas till följande adress:</b></li>
+            </ul>
+<textarea readonly cols="25" rows="4">
+Philip Sundfors Larsson
+Myrstigen 7 lgh 1101
+15160 Södertälje
+</textarea><br>
+        </section>
+        <footer>
+
+        </footer>
+    </body>
+</html>
